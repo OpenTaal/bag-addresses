@@ -3,12 +3,10 @@
 #TODO woonplaats Oost West en Middelbeers
 
 
-##from csv import reader, DictReader
 from datetime import datetime
 from locale import Error, LC_ALL, setlocale, strxfrm
 from operator import itemgetter
 from os.path import isfile
-##from pprint import pprint
 from re import compile, match
 from sys import argv, maxsize
 from unicodedata import category, name
@@ -267,10 +265,11 @@ def write_gemeentes(gemeentes, filename, total, stamp_time):
         else:
             lengths[length] = 1
     out.write('\n')
-    if errors:
-        for error in errors:
-            out.write(error)
-            out.write('\n')
+#FIXME wat zit exact in errors? en hoe te rapporteren?
+#    if errors:
+#        for error in errors:
+#            out.write(error)
+#            out.write('\n')
     out.write('\n')
     out.write('\n')
 
@@ -952,7 +951,6 @@ with open(filename) as addresses:
     for address in addresses:
         address = address[:-1]
         openbareruimte, huisnummer, huisletter, huisnummertoevoeging, postcode, woonplaats, gemeente, provincie, *remaining = address.split(';') 
-##for row in reader:
         total += 1
         if total % 250000 == 0:
             report.write('Read {:,} addresses...\n'.format(total))
@@ -961,9 +959,9 @@ with open(filename) as addresses:
 #            break
         uniq = '{}×{}×{}×{}×{}'.format(provincie, gemeente, woonplaats,
                                        postcode, openbareruimte)
-        if uniq == prev:
+        if uniq == prev or prev == '':
             prev = uniq
-            continue # optimise for speed
+            continue # optimise for speed and skip header
         prev = uniq
 
         gemeente = '{}×{}'.format(clean(gemeente, beginnings_gemeente,
