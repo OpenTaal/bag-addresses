@@ -328,7 +328,7 @@ def write_gemeentes(gemeentes, filename, total, stamp_time):
 # Write process and write results for woonplaats
 def write_woonplaatsen(woonplaatsen, filename, total, stamp_time):
     out = open('results/{}.woonplaats.md'.format(filename), 'w')
-    out_f = open('results/{}.woonplaats-frequency.md'.format(filename), 'w')
+    out_f = open('results/{}.woonplaats-frequency.tsv'.format(filename), 'w')
     out_s = open('results/{}.woonplaats-sorted.txt'.format(filename), 'w')
     out_r = open('results/{}.woonplaats-retrograde.txt'.format(filename), 'w')
 
@@ -1202,3 +1202,7 @@ for i in reversed(range(num_cols_proc)):
     for value, count in sorted(histograms_chars[i].items(), key=itemgetter(1), reverse=True):
         print('| {} | `{}` | `{}` | {} | {} |'.format(count, value, hex(ord(value)), decode_category(value), name(value).lower().replace('latin ', 'Latin ')))
     print('')
+
+
+
+# todo Amsterdam-Duivendrecht, Rotterdam-Albrandswaard
