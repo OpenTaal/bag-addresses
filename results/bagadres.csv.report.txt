@@ -39,54 +39,54 @@ Reporting on 380 gemeentes...
 Reporting on 2501 woonplaatsen...
 Reporting on 459325 postcodes...
 Reporting on 235794 openbareruimtes...
-Removed (False, ' (NH.)') from gemeente
 Removed (False, ' (L.)') from gemeente
+Removed (False, ' (NH.)') from gemeente
+Removed (False, ' L') from woonplaats
+Removed (False, ' Gn') from woonplaats
+Removed (True, 'Winterswijk ') from woonplaats
+Removed (False, ' (NB)') from woonplaats
 Removed (False, ' Gld') from woonplaats
-Removed (False, ' GN') from woonplaats
+Removed (False, ' (Gld)') from woonplaats
+Removed (False, ' Oldebroek') from woonplaats
+Removed (False, ' NB') from woonplaats
+Removed (False, ' AC') from woonplaats
 Removed (False, ' (GLD)') from woonplaats
 Removed (False, ' gem Hoogeveen') from woonplaats
-Removed (False, ' (Gld)') from woonplaats
-Removed (False, ' NB') from woonplaats
-Removed (True, 'Winterswijk ') from woonplaats
-Removed (False, ' AC') from woonplaats
-Removed (False, ' Rotterdam') from woonplaats
-Removed (False, ' NH') from woonplaats
-Removed (False, ' Gn') from woonplaats
-Removed (False, ' gem. Haarlem') from woonplaats
-Removed (False, ' Ut') from woonplaats
-Removed (False, ' Oldebroek') from woonplaats
 Removed (False, ' (NH)') from woonplaats
-Removed (False, ' L') from woonplaats
-Removed (False, ' (NB)') from woonplaats
+Removed (False, ' NH') from woonplaats
+Removed (False, ' Ut') from woonplaats
+Removed (False, ' GN') from woonplaats
+Removed (False, ' Rotterdam') from woonplaats
 Removed (False, ' ca') from woonplaats
-Removed (False, ' Oz') from openbareruimte
-Removed (False, ' Z.z.') from openbareruimte
-Removed (False, '-NO') from openbareruimte
-Removed (False, ' Z.Z.') from openbareruimte
-Removed (False, ' NZ') from openbareruimte
-Removed (False, ' WZ') from openbareruimte
+Removed (False, ' gem. Haarlem') from woonplaats
 Removed (False, ' O.z.') from openbareruimte
-Removed (False, ' W.Z.') from openbareruimte
-Removed (False, ' (West)') from openbareruimte
-Removed (False, ' N.O.') from openbareruimte
-Removed (False, ' OZ') from openbareruimte
-Removed (False, ' Z.W.') from openbareruimte
-Removed (False, ' Z.O.') from openbareruimte
-Removed (False, ' (Oast)') from openbareruimte
-Removed (False, ' W.z.') from openbareruimte
-Removed (False, ' zz') from openbareruimte
-Removed (False, '-ZW') from openbareruimte
-Removed (False, ' (noord)') from openbareruimte
-Removed (False, ' O') from openbareruimte
-Removed (False, ' Zz') from openbareruimte
-Removed (False, ' ZZ') from openbareruimte
-Removed (False, ' (zuid)') from openbareruimte
-Removed (False, ' O.Z.') from openbareruimte
-Removed (False, ' Wz') from openbareruimte
 Removed (False, ' N.z.') from openbareruimte
-Removed (False, ' Z') from openbareruimte
-Removed (False, ' N.W.') from openbareruimte
-Removed (False, ' nz') from openbareruimte
-Removed (False, ' N') from openbareruimte
-Removed (False, ' W') from openbareruimte
+Removed (False, ' WZ') from openbareruimte
+Removed (False, ' Z.O.') from openbareruimte
+Removed (False, ' Z.Z.') from openbareruimte
+Removed (False, ' W.Z.') from openbareruimte
 Removed (False, ' (Rucphen)') from openbareruimte
+Removed (False, ' N.W.') from openbareruimte
+Removed (False, ' W.z.') from openbareruimte
+Removed (False, ' Wz') from openbareruimte
+Removed (False, ' Z') from openbareruimte
+Removed (False, ' Oz') from openbareruimte
+Removed (False, '-NO') from openbareruimte
+Removed (False, ' (noord)') from openbareruimte
+Removed (False, ' N') from openbareruimte
+Removed (False, ' Z.W.') from openbareruimte
+Removed (False, ' NZ') from openbareruimte
+Removed (False, ' (West)') from openbareruimte
+Removed (False, ' nz') from openbareruimte
+Removed (False, ' (Oast)') from openbareruimte
+Removed (False, ' ZZ') from openbareruimte
+Removed (False, ' OZ') from openbareruimte
+Removed (False, ' W') from openbareruimte
+Removed (False, ' O.Z.') from openbareruimte
+Removed (False, ' zz') from openbareruimte
+Removed (False, ' Zz') from openbareruimte
+Removed (False, ' (zuid)') from openbareruimte
+Removed (False, '-ZW') from openbareruimte
+Removed (False, ' N.O.') from openbareruimte
+Removed (False, ' Z.z.') from openbareruimte
+Removed (False, ' O') from openbareruimte

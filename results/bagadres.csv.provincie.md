@@ -1,6 +1,6 @@
 # BAG provincie
 
-The data below related to *provincie* has been gathered from analysing 9,064,174 addresses from *Basisregistraties Adressen en Gebouwen* (BAG) on 2019-01-13 at 13:54:28.
+The data below related to *provincie* has been gathered from analysing 9,064,174 addresses from *Basisregistraties Adressen en Gebouwen* (BAG) on 2019-01-14 at 09:42:17.
 
 
 ## BAG names for provincie

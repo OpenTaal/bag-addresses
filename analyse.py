@@ -73,6 +73,8 @@ def clean(value, beginnings, middles, endings, removals):
     cl = value.find(')')
     if op != -1 and cl != -1:
         if op < cl and op > 0 and value[op-1] != ' ' and cl < len(value)-1:
+            if 'Vianen' in value: #TODO
+                print(value)
             value = value[:op] + value[op+1:cl] + value[cl+1:]
     begin = (' ', '-', ',', '/', '.')
     end = (' ', '-', ',', '/', "'")
@@ -265,10 +267,10 @@ def write_gemeentes(gemeentes, filename, total, stamp_time):
         else:
             lengths[length] = 1
     out.write('\n')
-#FIXME wat zit exact in errors? en hoe te rapporteren?
+#FIXME
 #    if errors:
-#        for error in errors:
-#            out.write(error)
+#        for err in errors:
+#            out.write(err)
 #            out.write('\n')
     out.write('\n')
     out.write('\n')
@@ -388,9 +390,11 @@ def write_woonplaatsen(woonplaatsen, filename, total, stamp_time):
         else:
             lengths[length] = 1
     out.write('\n')
-    if errors:
-        for err in errors:
-            out.write(err)
+#FIXME
+#    if errors:
+#        for err in errors:
+#            out.write(err)
+#            out.write('\n')
     out.write('\n')
     out.write('\n')
 
@@ -496,9 +500,11 @@ def write_postcodes(postcodes, filename, total, stamp_time):
     out.write('The list of {:,} distinct values for *postcode* is too long to '
               'show here.\n'.format(len(postcodes)))
     out.write('\n')
-    if errors:
-        for err in errors:
-            out.write(err)
+#FIXME
+#    if errors:
+#        for err in errors:
+#            out.write(err)
+#            out.write('\n')
     out.write('\n')
     out.write('\n')
 
@@ -650,9 +656,11 @@ def write_openbareruimtes(openbareruimtes, filename, total, stamp_time):
             add_link(links, 'Overpass Turbo', 'https://overpass-turbo.eu/?Q=rel[admin_level=10][type=boundary][boundary=administrative][name=%22{}%22];out geom;'.format(value), 'O')
             out.write('| {} | `{}` | {} |\n'.format(count, value, ' '.join(links)))
     out.write('\n')
-    if errors:
-        for err in errors:
-            out.write(err)
+#FIXME
+#    if errors:
+#        for err in errors:
+#            out.write(err)
+#            out.write('\n')
     out.write('\n')
     out.write('\n')
 
@@ -946,7 +954,7 @@ endings_openbareruimte = (' N',
 total = 0
 uniq = ''
 prev = ''
-report = open('results/report.txt', 'w')
+report = open('results/{}.report.txt'.format(filename), 'w')
 with open(filename) as addresses:    
     for address in addresses:
         address = address[:-1]
